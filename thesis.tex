@@ -1,0 +1,93 @@
+\documentclass{thesis}
+
+% User defined colors
+\definecolor{LightPink}{HTML}{F7EFF7}
+\definecolor{Wisteria}{HTML}{C3AFDD}
+\definecolor{Petrol}{HTML}{12939A}
+\definecolor{Honeydew}{HTML}{E8FFE0}
+\definecolor{DarkSeaGreen}{HTML}{80B192}
+\definecolor{MarkStroke}{HTML}{4b4e6d}
+\definecolor{MarkFill}{HTML}{8487aa}
+
+\hypersetup{
+  unicode=true,
+  pdftitle={English MSc Thesis Template},
+  pdfauthor={Panayiotis I. Vlantis},
+  pdfsubject={Big Data},
+  pdfkeywords={Big Data,latex,thesis,template},
+  pagebackref=true,
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+
+\begin{document}
+
+\title{
+  MsC Thesis Template
+}{
+  Πρότυπο για Διπλωματικές Εργασίες
+}
+
+\header{MSc Thesis Template}
+
+\date {July 2018}
+      {Ιούλιος 2018}
+      {Ιουλιος 2018} % Greek without accent
+
+\author {Panayiotis I. Vlantis}
+        {Παναγιώτης Ι. Βλαντής}{M1387}
+        {P. Vlantis}
+
+\supervisor {Alex Delis}{Professor}
+            {Αλέξης Δελής}{Καθηγητής}
+
+\commitee  {Alex Delis}{Professor}
+           {Αλέξης Δελής}{Καθηγητής}
+           {Maria Roussou}{Assistant Professor}
+           {Μαρία Ρούσσου}{Επίκουρη Καθηγήτρια}
+
+\subject {Big Data}{Δεδομένα Υψηλής Κλίμακας}
+
+\keywords {
+  big data,
+  latex,
+  thesis,
+  template
+}{
+  δεδομένα υψηλής κλίμακας,
+  πρότυπο,
+  διπλωματική
+}
+
+\include{abstract}
+
+\maketitle
+
+\begingroup
+  \hypersetup{linkcolor=black}
+  \tableofcontents
+  \thispagestyle{empty}
+  \clearpage
+  \listoftables
+  \thispagestyle{empty}
+  \clearpage
+  \listoffigures
+  \thispagestyle{empty}
+  \clearpage
+\endgroup
+
+\include{content}
+
+\begin{appendix}
+  \addcontentsline{toc}{chapter}{APPENDICES}
+  \appendixstartedtrue
+  \input{appendix}
+\end{appendix}
+
+\hypersetup{linkcolor=black}
+
+\bibliography{library}{}
+\bibliographystyle{IEEEtran}
+\end{document}
